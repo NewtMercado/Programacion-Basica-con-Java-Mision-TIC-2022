@@ -1,0 +1,2 @@
+# Programacion-Basica-con-Java-Mision-TIC-2022
+Repositorio con la coleccion de códigos cuando desarrollamos el curso de Programación Básica con Java de Misión TIC 2022. Aquí encontrarás ejemplos de código, ejercicios y recursos didácticos para dominar los fundamentos de Java y desarrollar tus habilidades de programación. Ideal para principiantes que buscan una introducción práctica al mundo del desarrollo de software.
