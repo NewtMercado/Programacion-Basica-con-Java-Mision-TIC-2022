@@ -1,0 +1,56 @@
+package operaciones;
+
+import java.util.Scanner;
+
+
+public class Clase_Padre {
+   protected  int valor1,valor2,resultado;
+   
+   Scanner entrada = new Scanner(System.in);
+   
+   public void PedirDatos(){
+       System.out.println("Ingrese un primer valor:");
+       valor1=entrada.nextInt();
+       
+       System.out.println("Ingrese un segundo valor:");
+       valor2=entrada.nextInt();
+   }
+   
+   public void MostrarResultado(){
+       System.out.println(resultado);
+   }
+
+  
+}
+····················
+public class ClaseHija_Suma extends Clase_Padre{
+    
+    public void sumar(){
+        resultado = valor1 + valor2;
+    }
+    
+    }
+···································
+public class ClaseHija_Resta extends Clase_Padre {
+    public void Restar(){
+        resultado = valor1-valor2;
+    }
+}
+·········································
+ public static void main(String[] args) {
+        ClaseHija_Suma mensajerosuma = new ClaseHija_Suma();
+        
+        mensajerosuma.sumar();
+        System.out.print("El Resultado de la suma es: ");
+        mensajerosuma.MostrarResultado();
+        
+        ClaseHija_Resta mensajeroresta = new ClaseHija_Resta();
+        mensajeroresta.PedirDatos();
+        mensajeroresta.Restar();
+        System.out.print("El Resultado de la Resta es: ");
+        mensajeroresta.MostrarResultado();
+        
+        
+    }
+    
+}
